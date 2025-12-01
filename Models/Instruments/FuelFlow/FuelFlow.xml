@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<PropertyList> 
+<path>FuelFlow.ac</path>
+
+
+	<!-- fuel flow -->
+	<animation>
+		<name>fuel-flow-ppm-l</name>
+		<type>rotate</type>
+		<object-name>needle-fuel-l</object-name>
+		<property>engines/engine[0]/fuel-flow-gph</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>135.8</dep></entry><!-- 0 -->
+			<entry><ind>1000</ind><dep>201.2</dep></entry>
+			<entry><ind>1500</ind><dep>232.1</dep></entry>
+			<entry><ind>2000</ind><dep>262</dep></entry>
+			<entry><ind>2500</ind><dep>293.2</dep></entry>
+			<entry><ind>3000</ind><dep>325.3</dep></entry>
+			<entry><ind>3500</ind><dep>354.6</dep></entry>
+			<entry><ind>4000</ind><dep>386.3</dep></entry>
+			<entry><ind>4500</ind><dep>416.45</dep></entry>
+			<entry><ind>5000</ind><dep>449</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>0.0260</y-m>
+			<z-m>0.002</z-m>
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+
+	<animation>
+		<name>fuel-flow-ppm-r</name>
+		<type>rotate</type>
+		<object-name>needle-fuel-r</object-name>
+		<property>engines/engine[1]/fuel-flow-gph</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>135.8</dep></entry><!-- 0 -->
+			<entry><ind>1000</ind><dep>201.2</dep></entry>
+			<entry><ind>1500</ind><dep>232.1</dep></entry>
+			<entry><ind>2000</ind><dep>262</dep></entry>
+			<entry><ind>2500</ind><dep>293.2</dep></entry>
+			<entry><ind>3000</ind><dep>325.3</dep></entry>
+			<entry><ind>3500</ind><dep>354.6</dep></entry>
+			<entry><ind>4000</ind><dep>386.3</dep></entry>
+			<entry><ind>4500</ind><dep>416.45</dep></entry>
+			<entry><ind>5000</ind><dep>449</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>0.087</y-m>
+			<z-m>0.002</z-m>
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+
+	<!-- lighting -->
+
+	<animation> 
+		<object-name>mount</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>>
+	</animation>
+
+	<animation>
+		<object-name>face</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>>
+	</animation>
+
+	<animation>
+		<object-name>needles</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>>
+	</animation>
+
+
+</PropertyList>

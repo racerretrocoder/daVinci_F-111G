@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+<PropertyList> 
+<path>Fans.ac</path>
+
+	
+	<!-- fan percent -->
+	<animation>
+		<name>fan-percent-l</name>
+		<type>rotate</type>
+		<object-name>needle-fan-l</object-name>
+		<property>engines/engine[0]/n1</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>25</ind><dep>47.3</dep></entry>
+			<entry><ind>50</ind><dep>94.6</dep></entry>
+			<entry><ind>75</ind><dep>137.4</dep></entry>
+			<entry><ind>80</ind><dep>173.2</dep></entry>
+			<entry><ind>85</ind><dep>207.4</dep></entry>
+			<entry><ind>90</ind><dep>243.7</dep></entry>
+			<entry><ind>95</ind><dep>280.7</dep></entry>
+			<entry><ind>100</ind><dep>314.6</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>-0.027</y-m>
+			<z-m>0.028</z-m>
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+
+	<animation>
+		<name>fan-percent-r</name>
+		<type>rotate</type>
+		<object-name>needle-fan-r</object-name>
+		<property>engines/engine[1]/n1</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>25</ind><dep>47.3</dep></entry>
+			<entry><ind>50</ind><dep>94.6</dep></entry>
+			<entry><ind>75</ind><dep>137.4</dep></entry>
+			<entry><ind>80</ind><dep>173.2</dep></entry>
+			<entry><ind>85</ind><dep>207.4</dep></entry>
+			<entry><ind>90</ind><dep>243.7</dep></entry>
+			<entry><ind>95</ind><dep>280.7</dep></entry>
+			<entry><ind>100</ind><dep>314.6</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>0.034</y-m>
+			<z-m>0.028</z-m>
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+
+
+	<!-- lighting -->
+
+	<animation> 
+		<object-name>mount</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>>
+	</animation>
+
+	<animation>
+		<object-name>face</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>>
+	</animation>
+
+	<animation>
+		<object-name>needles</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>>
+	</animation>
+
+	
+</PropertyList>

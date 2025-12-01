@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">30Years</name>
+        <Sides>Liveries/30Years/111sides.png</Sides>
+        <Top>Liveries/30Years/111bottop.png</Top>
+        <Wings>Liveries/30Years/111wings.png</Wings>
+        <Tanks>Liveries/30Years/111else.png</Tanks>
+      </livery>
+     </model>
+  </sim>
+
+</PropertyList>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">CF_67-0159</name>
+        <Sides>Liveries/CF_67-0159/111sides.png</Sides>
+        <Top>Liveries/CF_67-0159/111bottop.png</Top>
+        <Wings>Liveries/CF_67-0159/111wings.png</Wings>
+        <Tanks>Liveries/CF_67-0159/111else.png</Tanks>
+      </livery>
+     </model>
+  </sim>
+
+</PropertyList>

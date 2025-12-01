@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Default</name>
+        <Sides>Liveries/Default/111sides.png</Sides>
+        <Top>Liveries/Default/111bottop.png</Top>
+        <Wings>Liveries/Default/111wings.png</Wings>
+        <Tanks>Liveries/Default/111else.png</Tanks>
+      </livery>
+     </model>
+  </sim>
+
+</PropertyList>

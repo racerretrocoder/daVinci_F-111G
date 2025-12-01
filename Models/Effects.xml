@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <offsets>
+    <x-m>-1.639</x-m>
+    <y-m>0.0</y-m>
+    <z-m>1.302</z-m>
+    <pitch-deg>0</pitch-deg>
+   </offsets>
+
+	<!-- Effects -->
+
+	 
+	<model>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/wingtip-vortex.xml</path>
+		<offsets>
+			<x-m> 3.85 </x-m>
+			<y-m>-5.41 </y-m>
+			<z-m> 0.41</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/wingtip-vortex.xml</path>
+		<offsets>
+			<x-m> 3.85 </x-m>
+			<y-m> 5.41 </y-m>
+			<z-m> 0.41</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+ 
+	<model>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/contrail.xml</path>
+		<offsets>
+			<x-m>11.770</x-m>
+                        <y-m>0.75</y-m>
+                        <z-m>-1.57</z-m>
+		</offsets>
+	</model>
+ 
+          <model>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/contrail.xml</path>
+		<offsets>
+			<x-m>11.770</x-m>
+                        <y-m>-0.75</y-m>
+                        <z-m>-1.57</z-m>
+		</offsets>
+	</model>
+		
+	
+		
+	<!-- Engine fire -->
+	
+	<model>
+		<name>fire</name>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/Engine/Fire.xml</path>
+		<condition>
+			<equals>
+				<property>sim/crashed</property>
+				<value type="bool">true</value>
+			</equals>
+		</condition>
+		<offsets>
+			<x-m>1.05</x-m>
+			<y-m>0.00</y-m>
+			<z-m>1.75</z-m>
+			<heading-deg>0</heading-deg>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	
+	 
+	<!-- High Alpha vapour -->
+ 
+	<model>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/Vapour/Vapour.xml</path>
+		<offsets>
+			<x-m>-2.0</x-m>
+			<y-m>-1.0</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>-25</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/Vapour/Vapour.xml</path>
+	<offsets>
+			<x-m>-2.0</x-m>
+			<y-m>1.0</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>25</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/Vapour/Vapour2.xml</path>
+		<offsets>
+			<x-m>1.0</x-m>
+			<y-m>-2</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>45</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/Vapour/Vapour2.xml</path>
+		<offsets>
+			<x-m>1.0</x-m>
+			<y-m>2</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>-45</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<name>sonicboom</name>
+		<path>Aircraft/daVinci_F-111G/Models/Effects/boom/fx.xml</path>
+		<offsets>
+			<x-m>1</x-m>
+			<y-m>0</y-m>
+			<z-m>-1.000</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+	 
+	
+		
+	
+	
+
+   <!-- Afterburners-->
+
+     <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/Afterburner/Afterburner.xml</path>
+    <offsets>
+      <x-m>11.4</x-m>
+     <y-m>-0.85</y-m>
+     <z-m>-1.57</z-m>
+    </offsets>
+     </model>
+
+   <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/Afterburner/Afterburner.xml</path>
+    <offsets>
+      <x-m>11.4</x-m>
+     <y-m>0.85</y-m>
+     <z-m>-1.57</z-m>
+    </offsets>
+     </model>
+
+<!-- Tiptrail -->
+
+<!-- Vert Stab -->  
+  <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m>11.243</x-m>
+      <y-m>0</y-m>
+      <z-m>2.427</z-m>
+    </offsets>
+  </model>
+
+<!-- Port Horiz Stab -->  
+  <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m>10.689</x-m>
+      <y-m>-4.852</y-m>
+      <z-m>-0.603</z-m>
+    </offsets>
+  </model>
+
+<!-- Star Horiz Stab -->  
+  <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m>10.689</x-m>
+      <y-m>4.852</y-m>
+      <z-m>-0.603</z-m>
+    </offsets>
+  </model>
+
+ 
+<!-- Tire Smoke -->
+ 
+ <!--  Nose Wheel -->
+  <model>
+    <path>Aircraft/daVinci_F-35B/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m>-5.409</x-m>
+      <y-m>0.000</y-m>
+      <z-m>-3.153</z-m>
+    </offsets>
+  </model>
+
+  <!-- Port Wheel -->
+  <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m>3.198</x-m>
+      <y-m> -1.663</y-m>
+      <z-m>-3.196</z-m>
+    </offsets>
+  </model>
+
+  <!-- Star Wheel -->
+  <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m>3.198</x-m>
+      <y-m>1.663</y-m>
+      <z-m>-3.196</z-m>
+    </offsets>
+  </model>
+
+<!-- Smoke Trail -->
+  <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/smoke/smokeL.xml</path>
+    <offsets>
+	<x-m>11.770</x-m>
+        <y-m>0.75</y-m>
+        <z-m>-1.57</z-m>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/daVinci_F-111G/Models/Effects/smoke/smokeL.xml</path>
+    <offsets>
+	<x-m>11.770</x-m>
+        <y-m>-0.75</y-m>
+        <z-m>-1.57</z-m>
+   </offsets>>
+  </model>
+
+
+	
+</PropertyList>

@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <sim>
+    
+    <flight-model>jsb</flight-model>
+    <aircraft-version>Super VooDoo HooDoo</aircraft-version>
+    <status>beta</status>
+    <rating>
+      <FDM type="int">10</FDM>
+      <systems type="int">10</systems>
+      <cockpit type="int">10</cockpit>
+      <model type="int">10</model>
+    </rating>
+    <author>VooDoo, The FGUK Dream Development Team, Markus Zojer, Paul Jay Schrenker, 
+    Ludovic Brenta, with a Freeware 3D Model from Flyaway Simulations!</author>
+    <aero>fdm</aero>
+    <fuel-fraction>1.0</fuel-fraction>
+    <description>XF-111G (Experimental Jsbsim)</description>
+
+  <rendering>
+   <refl_correction type="string">-0.51</refl_correction>
+   <frensel-factor type="string">0.5</frensel-factor>
+  </rendering>
+
+   <previews>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/daVinci_F-111G-1.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/daVinci_F-111G-2.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/daVinci_F-111G-3.jpg</path>
+      </preview>
+   <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/daVinci_F-111G-4.jpg</path>
+      </preview>
+   <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/daVinci_F-111G-5.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/daVinci_F-111G-6.jpg</path>
+      </preview>
+    </previews>
+
+    <allow-toggle-cockpit>true</allow-toggle-cockpit>
+    <number-views type="int" archive="y">6</number-views>
+
+    <chase-distance-m type="double" archive="y">-65.0</chase-distance-m>
+
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+	<x-offset-m archive="y">-0.3601</x-offset-m><!-- left-/right+ -0.67-->
+	<y-offset-m archive="y">-0.0597</y-offset-m><!-- up+/down- 1.37-->
+	<z-offset-m archive="y">17.561</z-offset-m><!-- back+ 7.15-->
+        <pitch-offset-deg>-15</pitch-offset-deg>
+        <default-field-of-view-deg>100</default-field-of-view-deg>
+      </config>
+    </view>
+
+<!-- Shift the camera target point back -->
+
+      <view n="1">
+        <config>
+          <target-z-offset-m archive="y" type="double">10.0</target-z-offset-m>
+          <pitch-offset-deg archive="y">6</pitch-offset-deg>
+        </config>
+      </view>
+
+      <view n="2">
+        <config>
+          <y-offset-m archive="y" type="double">5.4</y-offset-m>
+          <z-offset-m archive="y">-19.7</z-offset-m>
+          <target-z-offset-m archive="y" type="double">10.0</target-z-offset-m>
+          <pitch-offset-deg archive="y">6</pitch-offset-deg>
+        </config>
+      </view>
+
+      <view n="3">
+        <config>
+          <y-offset-m archive="y" type="double">5.4</y-offset-m>
+          <z-offset-m archive="y">-19.7</z-offset-m>
+          <target-z-offset-m archive="y" type="double">10.0</target-z-offset-m>
+          <pitch-offset-deg archive="y">6</pitch-offset-deg>
+        </config>
+      </view>
+
+      <view n="4">
+        <config>
+           <y-offset-m archive="y" type="double">5.4</y-offset-m>
+          <z-offset-m archive="y">-19.7</z-offset-m>
+          <target-z-offset-m archive="y" type="double">10.0</target-z-offset-m>
+          <pitch-offset-deg archive="y">6</pitch-offset-deg>
+        </config>
+      </view>
+
+      <view n="5">
+        <config>
+           <y-offset-m archive="y" type="double">5.4</y-offset-m>
+          <z-offset-m archive="y">-19.7</z-offset-m>
+          <target-z-offset-m archive="y" type="double">10.0</target-z-offset-m>
+          <pitch-offset-deg archive="y">6</pitch-offset-deg>
+        </config>
+      </view>
+
+      <view n="6">
+        <config>
+           <y-offset-m archive="y" type="double">5.4</y-offset-m>
+          <z-offset-m archive="y">-19.7</z-offset-m>
+          <target-z-offset-m archive="y" type="double">10.0</target-z-offset-m>
+          <pitch-offset-deg archive="y">6</pitch-offset-deg>
+        </config>
+      </view>
+      
+      <view n="7">
+        <config>
+           <y-offset-m archive="y" type="double">5.4</y-offset-m>
+          <z-offset-m archive="y">-19.7</z-offset-m>
+          <target-z-offset-m archive="y" type="double">10.0</target-z-offset-m>
+          <pitch-offset-deg archive="y">6</pitch-offset-deg>
+        </config>
+      </view>
+      
+  
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/daVinci_F-111G/Sounds/daVinci_F-111G-sound.xml</path>
+    </sound>
+        
+     <model>
+      <path>Aircraft/daVinci_F-111G/Models/XF-111G.xml</path>
+     </model>
+
+    <airport>
+      <runways> 
+        <start-offset-m>35</start-offset-m>
+      </runways>
+    </airport>
+    
+     <multiplay>
+  
+      <chat_display>1</chat_display>
+      <generic> 
+        <bool n="0" type="bool" alias="damage/sounds/explode-on"/>
+        <bool n="1" type="bool" alias="damage/fire/serviceable"/>
+        <bool n="2" type="bool">true</bool><!-- this must stay true to prevent bug in MP protocol for bools -->
+        <bool n="40" type="bool">true</bool>
+        <bool n="41" type="bool">true</bool>
+        <bool n="42" type="bool">true</bool>
+        <bool n="43" type="bool">true</bool>
+        <bool n="44" type="bool">true</bool>
+        <bool n="45" type="bool">true</bool>
+        <bool n="35" type="bool" alias="/surface-positions/chute-pos-norm"/>
+        <bool n="36" type="bool" alias="/controls/engines/engine/throttle"/>
+        <bool n="50" type="bool">true</bool>
+        <bool n="51" type="bool" alias="/instrumentation/gci/bogeydope"/>
+        <bool n="52" type="bool" alias="/instrumentation/gci/cutoff"/>
+        <int n="0" alias="/controls/switches/nav-lights-switch" /> <!-- Nav lights on -->
+        <int n="1" alias="/controls/switches/beacon-switch"/> <!-- Beacon on -->
+        <int n="2" alias="/controls/switches/landing-lights-switch" />  <!-- Landing lights on -->
+        <int n="3" alias="/controls/switches/strobe-switch"/>  <!-- Taxi light on -->
+        <int type="int" n="4">  0 </int><!-- 4 immat -->
+        <int type="int" n="5">  0 </int><!-- 5 immat -->
+        <int type="bool" n="6"> 1 </int><!-- 6 smoke/bomb/torpedo -->
+        <int n="7" alias="/sim/crashed" /><!-- Crashed -->
+        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int> <!-- 8 nav-lights -->
+        <int n="9" alias="/sim/model/lights/beacon/state">  false </int> <!-- 9 strobe-lights -->
+        <int n="10" alias="/controls/electric/key-pos">  0 </int> <!-- 10 key position -->
+        <int n="11" type="int" alias="/surface-positions/left-flap-pos-norm"/>
+        <int n="12" type="int" alias="/surface-positions/right-flap-pos-norm"/>
+        <int n="15" type="int" alias="/sim/model/daVinci_SU-34/smokewinderB1"/>
+        <int n="16" type="int" alias="/sim/model/daVinci_SU-34/smokewinderB9"/>
+        <int n="17" type="int" alias="/sim/model/daVinci_SU-34/smokewinderW1"/>
+        <int n="18" type="int" alias="/sim/model/daVinci_SU-34/smokewinderW9"/>
+        <float n="1" alias="/velocities/airspeed-kt/"/>
+        <float n="2" alias="/velocities/mach"/>
+        <float n="3" alias="/gear/gear[2]/wow/"/>
+        <float n="4" type="double" alias="/surface-positions/right-aileron-pos-norm"/>
+        <float n="5" type="double" alias="/surface-positions/left-elevator-pos-norm"/>
+        <float n="6" type="double" alias="/surface-positions/right-taileron-pos-norm"/>
+        <float n="7" type="double" alias="/gear/gear[0]/steering-norm"/>
+        <float n="8" alias="/position/altitude-ft"> 0 </float><!-- altitude for Smoke/Trail -->
+        <float n="9" type="double" alias="/instrumentation/doors/wings/position-norm"/>
+        <float n="10" alias="/baydoors/position-norm"/>
+        <float n="11" alias="/surface-positions/flap-pos-norm"/>
+        <float n="13" alias="/surface-positions/left-aileron-pos-norm"/>
+        <float n="14" type="double">0</float><!-- scene red inverted --> 
+        <float n="18" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="19" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="20" alias="/gear/gear[2]/rollspeed-ms"/>  
+        <float n="21" alias="/surface-positions/wing-sweep-pos-norm"/>
+        <float n="22" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="23" alias="/surface-positions/right-spoiler-pos-norm"/>
+        <float n="24" alias="/surface-positions/right-elevator-pos-norm"/>
+        <float n="25" alias="/surface-positions/left-elevator-pos-norm"/>
+        <float n="26" alias="/position/altitude-ft"/>
+       </generic>
+    </multiplay>
+
+<flight-recorder>
+      <replay-config type="int">0</replay-config>
+      <config n="0" include="/Aircraft/Generic/flightrecorder/generic-jet.xml">
+        <name type="string">B-1B Flight Recorder</name>
+        <signal>
+          <type>float</type> <!-- right wing sweep -->
+          <property type="string">surface-positions/wing-sweep-pos-norm</property>
+        </signal>
+<signal>
+          <type>float</type> <!-- Star Elevator -->
+          <property type="string">surface-positions/right-elevator-pos-norm</property>
+        </signal>
+<signal>
+          <type>float</type> <!-- Port Elevator -->
+          <property type="string">surface-positions/left-elevator-pos-norm</property>
+        </signal>
+<signal>
+          <type>float</type> <!-- Star Spoiler -->
+          <property type="string">surface-positions/right-spoiler-pos-norm</property>
+        </signal>
+<signal>
+          <type>float</type> <!-- Port Spoiler -->
+          <property type="string">surface-positions/right-spoiler-pos-norm</property>
+        </signal>
+<signal>
+          <type>float</type> <!-- Canopy Position -->
+          <property type="string">sim/model/door-positions/crew/position-norm</property>
+        </signal>
+                
+        <signal>
+          <type>float</type>
+          <property type="string">/controls/engines[0]/afterburner</property>
+        </signal>
+        <signal>
+          <type>float</type>
+          <property type="string">/controls/engines[1]/afterburner</property>
+        </signal>
+        
+	<signal>
+          <type>float</type>
+          <property type="string">/environment/relative-humidity</property>
+        </signal>
+        <signal>
+          <type>float</type>
+          <property type="string">/environment/temperature-degc</property>
+        </signal>
+       <signal>
+          <type>float</type>
+          <property type="string">velocities/airspeed-kt</property>
+        </signal>
+	<signal>
+          <type>float</type>
+          <property type="string">engines/engine[0]/n2</property>
+        </signal>
+        <signal>
+          <type>float</type>
+          <property type="string">engines/engine[1]/n2</property>
+        </signal>
+       
+      </config>
+    </flight-recorder>
+   
+    <menubar>
+      <default>
+        <menu n="10">
+          <label>daVinci_F-111G</label>
+          <enabled type="bool">true</enabled>
+          <item n="0">
+            <label>Autostart</label>
+            <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/engine[0]/cutoff</property>
+            </binding>
+	    <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/engine[1]/cutoff</property>
+            </binding>
+	    <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/engine[2]/cutoff</property>
+            </binding>
+	    <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/engine[3]/cutoff</property>
+            </binding>
+          </item>
+          <item n="10">
+            <label>Pushback</label>
+            <name>pushback</name>
+            <binding>
+              <command>dialog-show</command>
+              <dialog-name>pushback</dialog-name>
+            </binding>
+          </item>
+          <item n="11">
+            <label>Select Livery</label>
+            <binding>
+              <command>nasal</command>
+              <script>aircraft.livery.dialog.toggle()</script>
+            </binding>
+          </item>
+ 
+        </menu>
+      </default>
+    </menubar>
+
+ <hud>
+   <path n="1">Aircraft/daVinci_F-111G/Hud/hud.xml</path>
+    
+   <visibility n="1">true</visibility>
+   <palette>
+    <color n="0">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">0.38</red>
+     <green type="float">1.0</green>
+     <blue type="float">0.22</blue>
+    </color>
+    <color n="1">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">1.0</red>
+     <green type="float">0.2</green>
+     <blue type="float">0.0</blue>
+    </color>
+   </palette>
+ 
+   <clipping>
+            <left type="double">-75</left>
+            <right type="double">70</right>
+            <top type="double">40</top>
+            <bottom type="double">-85</bottom>
+         </clipping>
+  </hud>
+
+    <systems>
+      <autopilot>
+        <path>Aircraft/daVinci_F-111G/Systems/daVinci_SU-24M_Fencer-autopilot.xml</path>
+      </autopilot>
+      </systems>
+   
+       
+    <wing-sweep>
+      <setting>0.00</setting>
+      <setting>0.25</setting>
+      <setting>0.50</setting>
+      <setting>0.75</setting>
+      <setting>1.00</setting>
+    </wing-sweep>
+
+    <flaps>
+      <setting>0.0</setting>
+      <setting>0.5</setting>
+      <setting>1.0</setting>
+    </flaps>
+
+    <spoilers>
+      <setting>0.0</setting>
+      <setting>0.5</setting>
+      <setting>1.0</setting>
+    </spoilers>
+
+    <weight n="0">
+      <name>wing pos fwd</name>
+      <weight-lb type="float">20000</weight-lb>
+    </weight>
+    <weight n="1">
+      <name>wing pos aft</name>
+      <weight-lb type="float">0</weight-lb>
+    </weight>
+    <weight n="2">
+      <name>fuelwing fwd</name>
+      <weight-lb type="float">0</weight-lb>
+    </weight>
+    <weight n="3">
+      <name>fuelwing aft</name>
+      <weight-lb type="float">0</weight-lb>
+    </weight>
+    <weight n="4">
+      <name>bay fwd</name>
+      <weight-lb type="float">0</weight-lb>
+    </weight>
+    <weight n="5">
+      <name>bay intmd</name>
+      <weight-lb type="float">0</weight-lb>
+    </weight>
+    <weight n="6">
+      <name>bay aft</name>
+      <weight-lb type="float">0</weight-lb>
+    </weight>
+
+    <!-- AoA Indexer target 1.0 deg -->
+    <aoa-indexer>
+      <too-slow-deg>2.5</too-slow-deg>  <!-- target +1.5 deg -->
+      <slow-deg>1.5</slow-deg>          <!-- target +0.5 deg -->         
+      <fast-deg>0.5</fast-deg>          <!-- target -0.5 deg -->         
+      <too-fast-deg>-0.5</too-fast-deg>  <!-- target -1.5 deg -->         
+    </aoa-indexer>
+
+    <help>
+
+      <title>daVinci_F-111G</title>
+      
+      <key>
+        <name>j/k</name>
+        <desc>decrease/increase spoilers</desc>
+      </key>
+      <key>
+	<name>f</name>
+	<desc>sweep wing back</desc>
+      </key>
+      <key>
+	<name>F</name>
+	<desc>sweep wing fwd</desc>
+      </key>
+      
+      
+      <key> 
+	<name>Cntrl d</name>
+	<desc>Toggle Weapons Bay Doors</desc>
+      </key>
+     
+
+      <line>Afterburner(ab) auto applied at full throttle</line>
+      <line>For takeoff apply 1/2 flaps, full ab</line>
+      <line>Rotate at 165kts/takeoff at 170/180kts</line>
+      <line>---------------------------------------</line>
+      
+      <line>Good Luck!</line>
+    </help>
+    
+    <!--<ai>
+
+</ai>-->
+  </sim>
+
+  <!-- Start with the Parking Brake off -->
+  <controls>
+
+ 
+    <gear>
+      <brake-parking type="double">0.0</brake-parking>
+    </gear>
+    <flight>
+      <wing-sweep type="double">0.0</wing-sweep>
+      <flaps type="double">0.0</flaps>
+      <elevator-incidence-deg type="double">0.0</elevator-incidence-deg>
+    </flight>
+
+    <switches>
+      <engines>
+        <afterburner n="0">1</afterburner>
+	<afterburner n="1">1</afterburner>
+	<afterburner n="2">1</afterburner>
+	<afterburner n="3">1</afterburner>
+      </engines>
+    </switches>
+
+    <engines>
+      <engine n="0">
+	<cutoff type="double">0</cutoff>
+	
+      </engine>
+      <engine n="1">
+	<cutoff type="double">0</cutoff>
+	   	
+      </engine>
+      
+    </engines>
+
+  
+
+  </controls>
+  
+  <!-- Engine indexes -->
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+    </engine>
+   </engines>
+  
+  <instrumentation>
+    <radar>
+      <range type="int" archive="y">40</range>
+      <minimized type="bool" archive="y">false</minimized>
+    </radar>
+    <cdu900>
+      <line-selected type="int">0</line-selected>
+      <expr>
+        <leet type="int">1337</leet>
+	<oneone type="int">11</oneone>
+	<none type="int">0</none>
+      </expr>
+    </cdu900>
+    <wxradar>
+      <serviceable>true</serviceable>
+      <range type="int" archive="y">20</range>
+      <minimized type="bool" archive="y">false</minimized>
+      <switch archive="y">off</switch>
+      <mode archive="y">wx</mode>
+      <lightning type="bool" archive="y">true</lightning>
+      <display-mode archive="y">arc</display-mode>
+    </wxradar>
+  </instrumentation>
+  
+ <!-- Map Keys -->
+ <input>
+    <keyboard include="Systems/daVinci_F-111G-keyboard.xml"/>
+ </input>
+
+
+  <nasal>
+    <daVinci_F-111G>
+      
+      <file>Aircraft/daVinci_F-111G/Nasal/cdu900.nas</file>
+      <file>Aircraft/daVinci_F-111G/Nasal/b1b.nas</file>
+      <file>Aircraft/daVinci_F-111G/Nasal/phd.nas</file>
+      <file>Aircraft/daVinci_F-111G/Nasal/liveries.nas</file>
+    </daVinci_F-111G>
+    <lights>
+      <file>Aircraft/daVinci_F-111G/Nasal/Lights.nas</file>
+    </lights>
+     <flightcontrols>
+      <file>Aircraft/daVinci_F-111G/Nasal/flightcontrols.nas</file>
+    </flightcontrols>
+    <cg>
+      <file>Aircraft/daVinci_F-111G/Nasal/cg.nas</file>
+    </cg>
+    <tfs>
+      <file>Aircraft/daVinci_F-111G/Nasal/terrain_follow.nas</file>
+    </tfs>
+    <rain>
+      <file>Aircraft/daVinci_F-111G/Nasal/rain.nas</file>
+    </rain>
+    <low>
+      <file>Aircraft/daVinci_F-111G/Nasal/low.nas</file>
+    </low>
+    <radar>
+      <file>Aircraft/daVinci_F-111G/Nasal/radar.nas</file>
+     
+      </radar>
+    <enginefire>
+      <file>Aircraft/daVinci_F-111G/Nasal/enginefire.nas</file>
+    </enginefire>
+        
+     <doors>
+      <file>Aircraft/daVinci_F-111G/Nasal/doors.nas</file>
+    </doors>
+    <baydoors>
+       <file>Aircraft/daVinci_F-35B/Nasal/baydoors.nas</file>
+    </baydoors>
+
+  </nasal>
+
+</PropertyList>

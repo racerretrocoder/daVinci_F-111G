@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">NewHampshireSpecial</name>
+        <Sides>Liveries/NewHampshireSpecial/111sides.png</Sides>
+        <Top>Liveries/NewHampshireSpecial/111bottop.png</Top>
+        <Wings>Liveries/NewHampshireSpecial/111wings.png</Wings>
+        <Tanks>Liveries/NewHampshireSpecial/111else.png</Tanks>
+      </livery>
+     </model>
+  </sim>
+
+</PropertyList>

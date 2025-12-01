@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">NASA</name>
+        <Sides>Liveries/NASA/111sides.png</Sides>
+        <Top>Liveries/NASA/111bottop.png</Top>
+        <Wings>Liveries/NASA/111wings.png</Wings>
+        <Tanks>Liveries/NASA/111else.png</Tanks>
+      </livery>
+     </model>
+  </sim>
+
+</PropertyList>

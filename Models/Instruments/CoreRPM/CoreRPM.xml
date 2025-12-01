@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<PropertyList> 
+<path>CoreRPM.ac</path>
+
+	
+	<!-- core rpm -->
+	<animation>
+		<name>core-rpm-l</name>
+		<type>rotate</type>
+		<object-name>needle-core-l</object-name>
+		<property>engines/engine[0]/n2</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>10</ind><dep>25</dep></entry>
+			<entry><ind>20</ind><dep>50</dep></entry>
+			<entry><ind>30</ind><dep>75</dep></entry>
+			<entry><ind>40</ind><dep>102.2</dep></entry>
+			<entry><ind>50</ind><dep>128</dep></entry>
+			<entry><ind>60</ind><dep>154</dep></entry>
+			<entry><ind>70</ind><dep>184</dep></entry>
+			<entry><ind>80</ind><dep>210</dep></entry>
+			<entry><ind>90</ind><dep>238</dep></entry>
+			<entry><ind>105</ind><dep>272.5</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>-0.079</y-m>
+			<z-m>0.002</z-m>
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+
+	<animation>
+		<name>core-rpm-r</name>
+		<type>rotate</type>
+		<object-name>needle-core-r</object-name>
+		<property>engines/engine[1]/n2</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>10</ind><dep>25</dep></entry>
+			<entry><ind>20</ind><dep>50</dep></entry>
+			<entry><ind>30</ind><dep>75</dep></entry>
+			<entry><ind>40</ind><dep>102.2</dep></entry>
+			<entry><ind>50</ind><dep>128</dep></entry>
+			<entry><ind>60</ind><dep>154</dep></entry>
+			<entry><ind>70</ind><dep>184</dep></entry>
+			<entry><ind>80</ind><dep>210</dep></entry>
+			<entry><ind>90</ind><dep>238</dep></entry>
+			<entry><ind>105</ind><dep>272.5</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>-0.019</y-m>
+			<z-m>0.002</z-m>
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+
+	
+	<!-- lighting -->
+
+	<animation> 
+		<object-name>mount</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>
+	</animation>
+
+	<animation>
+		<object-name>face</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>
+	</animation>
+
+	<animation>
+		<object-name>needles</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>
+	</animation>
+
+	
+</PropertyList>

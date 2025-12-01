@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/asi/A-10-asi.xml</path>
+    <offsets>
+      <x-m>-0.131</x-m>
+      <y-m>-0.056</y-m>
+      <z-m>-0.021</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/AI/ai.xml</path>
+    <offsets>
+      <x-m>-0.120</x-m>
+      <y-m>-0.200</y-m>
+      <z-m>-0.194</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/HSI/hsi.xml</path>
+    <offsets>
+      <x-m>-0.129</x-m>
+      <y-m>-0.202</y-m>
+      <z-m>-0.3415</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/TempGauges/TempGauges.xml</path>
+    <offsets>
+      <x-m>-0.132</x-m>
+      <y-m>0.1059</y-m>
+      <z-m>-0.207</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/OilPressure/OilPressure.xml</path>
+    <offsets>
+      <x-m>-0.1303</x-m>
+      <y-m>0.1059</y-m>
+      <z-m>-0.1587</z-m>
+    </offsets>
+</model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/CoreRPM/CoreRPM.xml</path>
+    <offsets>
+      <x-m>-0.1295</x-m>
+      <y-m>0.1047</y-m>
+      <z-m>-0.392</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/Fans/Fans.xml</path>
+    <offsets>
+      <x-m>-0.1295</x-m>
+      <y-m>0.0514</y-m>
+      <z-m>-0.359</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/FuelFlow/FuelFlow.xml</path>
+    <offsets>
+      <x-m>-0.126</x-m>
+      <y-m>-0.000</y-m>
+      <z-m>-0.273</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/BackupAI/BackupAI.xml</path>
+    <offsets>
+      <x-m>-0.110</x-m>
+      <y-m>0.332</y-m>
+      <z-m>-0.148</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/BackupAI/BackupAI.xml</path>
+    <offsets>
+      <x-m>-0.1075</x-m>
+      <y-m>-0.408</y-m>
+      <z-m>-0.203</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/LD-gear-panel/LD-gear-panel.xml</path>
+    <offsets>
+      <x-m>-0.1485</x-m>
+      <y-m>-0.458</y-m>
+      <z-m>-0.3625</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/BackupHSI/BackupHSI.xml</path>
+    <offsets>
+      <x-m>-0.132</x-m>
+      <y-m>0.2475</y-m>
+      <z-m>-0.1575</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/Chronograph/Chronograph.xml</path>
+    <offsets>
+      <x-m>-0.130</x-m>
+      <y-m>0.160</y-m>
+      <z-m>-0.286</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>-0.1282</x-m>
+      <y-m>0.160</y-m>
+      <z-m>-0.217</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/alt/altimeter.xml</path>
+    <offsets>
+      <x-m>-0.1315</x-m>
+      <y-m>0.160</y-m>
+      <z-m>-0.145</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/Aux_asi/Aux-asi.xml</path>
+    <offsets>
+      <x-m>-0.1280</x-m>
+      <y-m>0.3309</y-m>
+      <z-m>-0.2191</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/PFD/PFD3d.xml</path>
+    <offsets>
+      <x-m>-0.123</x-m>
+      <y-m>-0.200</y-m>
+      <z-m>-0.254</z-m>
+    </offsets>
+  </model>
+
+     
+</PropertyList>

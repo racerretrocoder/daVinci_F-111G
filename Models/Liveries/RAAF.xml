@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">RAAF</name>
+        <Sides>Liveries/RAAF/111sides.png</Sides>
+        <Top>Liveries/RAAF/111bottop.png</Top>
+        <Wings>Liveries/RAAF/111wings.png</Wings>
+        <Tanks>Liveries/RAAF/111else.png</Tanks>
+      </livery>
+     </model>
+  </sim>
+
+</PropertyList>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<PropertyList> 
+<path>TempGauges.ac</path>
+
+
+	<!-- temp -->
+	<animation>
+		<name>temp-l</name>
+		<type>rotate</type>
+		<object-name>needle-temp-l</object-name>
+		<property>engines/engine[0]/itt-norm</property>
+		<interpolation> 
+			<entry><ind>0.0000</ind><dep>118</dep></entry><!--0-->
+			<entry><ind>0.0213</ind><dep>179</dep></entry><!--iddle-->
+			<entry><ind>0.2310</ind><dep>164</dep></entry><!--25% thrust-->
+			<entry><ind>0.9870</ind><dep>295</dep></entry><!--max thrust-->
+		</interpolation>
+		<center>
+			<y-m>-0.079</y-m>
+			<z-m>0.055</z-m>
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+
+	<animation>
+		<name>temp-r</name>
+		<type>rotate</type>
+		<object-name>needle-temp-r</object-name>
+		<property>engines/engine[1]/itt-norm</property>
+		<interpolation> 
+			<entry><ind>0.0000</ind><dep>118</dep></entry><!--0-->
+			<entry><ind>0.0213</ind><dep>179</dep></entry><!--iddle-->
+			<entry><ind>0.2310</ind><dep>164</dep></entry><!--25% thrust-->
+			<entry><ind>0.9870</ind><dep>295</dep></entry><!--max thrust-->
+		</interpolation>
+		<center>
+			<y-m>-0.019</y-m>
+			<z-m>0.055</z-m>
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+
+	
+	<!-- lighting -->
+	
+	<animation>
+		<object-name>face</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>
+	</animation>
+
+	<animation>
+		<object-name>needles</object-name>
+		<type>material</type>
+		<condition><not><property>sim/rendering/rembrandt/enabled</property></not></condition>
+		<emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.017</red>
+      <green> 0.60 </green>
+      <blue>  0.65 </blue>
+    </emission>
+	</animation>
+
+	
+
+</PropertyList>
