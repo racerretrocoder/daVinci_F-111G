@@ -16,12 +16,12 @@
 	<desc>Increase sweep</desc>
 	<binding>
 	  <command>nasal</command>
-	  <script>flightcontrols.wingSweep(-1)</script>
+	  <script>flight.sweepin();</script>
 	</binding>
 	<mod-up>
 	  <binding>
 	    <command>nasal</command>
-	    <script>flightcontrols.wingSweep(0)</script>
+	    <script>print("end wingsweep");</script>
 	  </binding>
 	</mod-up>
       </key>
@@ -31,12 +31,12 @@
 	<desc>Decrease sweep</desc>
 	<binding>
 	  <command>nasal</command>
-	  <script>flightcontrols.wingSweep(1)</script>
+	  <script>flight.sweepout();</script>
 	</binding>
 	<mod-up>
 	  <binding>
 	    <command>nasal</command>
-	    <script>flightcontrols.wingSweep(0)</script>
+	    <script>print("end wingsweep");</script>
 	  </binding>
 	</mod-up>
       </key>

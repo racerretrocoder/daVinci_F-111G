@@ -11,7 +11,7 @@
       <cockpit type="int">10</cockpit>
       <model type="int">10</model>
     </rating>
-    <author>VooDoo, The FGUK Dream Development Team, Markus Zojer, Paul Jay Schrenker, 
+    <author>Phoenix (JSBsim FDM, Weapons, Systems, implementation of OPRF Features), Omega** (Information) VooDoo, The FGUK Dream Development Team, Markus Zojer, Paul Jay Schrenker, 
     Ludovic Brenta, with a Freeware 3D Model from Flyaway Simulations!</author>
     <aero>fdm</aero>
     <fuel-fraction>1.0</fuel-fraction>
@@ -63,9 +63,9 @@
     <view n="0">
       <internal archive="y">true</internal>
       <config>
-	<x-offset-m archive="y">-0.3601</x-offset-m><!-- left-/right+ -0.67-->
-	<y-offset-m archive="y">-0.0597</y-offset-m><!-- up+/down- 1.37-->
-	<z-offset-m archive="y">17.561</z-offset-m><!-- back+ 7.15-->
+	<x-offset-m archive="y">-0.361665762</x-offset-m><!-- left-/right+ -0.67-->
+	<y-offset-m archive="y">-0.0788215625</y-offset-m><!-- up+/down- 1.37-->
+	<z-offset-m archive="y">4.375453125</z-offset-m><!-- back+ 7.15-->
         <pitch-offset-deg>-15</pitch-offset-deg>
         <default-field-of-view-deg>100</default-field-of-view-deg>
       </config>
@@ -278,22 +278,17 @@
           <label>daVinci_F-111G</label>
           <enabled type="bool">true</enabled>
           <item n="0">
-            <label>Autostart</label>
+            <label>Autostart Engines</label>
             <binding>
-              <command>property-toggle</command>
-              <property>controls/engines/engine[0]/cutoff</property>
+              <command>nasal</command>
+              <script>autostart.start();</script>
             </binding>
-	    <binding>
-              <command>property-toggle</command>
-              <property>controls/engines/engine[1]/cutoff</property>
-            </binding>
-	    <binding>
-              <command>property-toggle</command>
-              <property>controls/engines/engine[2]/cutoff</property>
-            </binding>
-	    <binding>
-              <command>property-toggle</command>
-              <property>controls/engines/engine[3]/cutoff</property>
+          </item>
+          <item n="1">
+            <label>Autostop Engines</label>
+            <binding>
+              <command>nasal</command>
+              <script>autostart.stop();</script>
             </binding>
           </item>
           <item n="10">
@@ -568,7 +563,12 @@
     <baydoors>
        <file>Aircraft/daVinci_F-35B/Nasal/baydoors.nas</file>
     </baydoors>
-
+    <autostart>
+       <file>Aircraft/daVinci_F-111G/Nasal/autostart.nas</file>
+    </autostart>
+    <flight>
+       <file>Aircraft/daVinci_F-111G/Nasal/control.nas</file>
+    </flight>
   </nasal>
 
 </PropertyList>

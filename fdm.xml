@@ -255,10 +255,60 @@
 <!--525sqft swept-->
 <!--126lb/sqft  swept: 158lb/sqft-->
 
+<function name="fcs/elevator-g-limit">  
+    <product>
+      <property>fcs/elevator-cmd-norm</property> <!--if its Zero. Itll Cancel out the glimit, Making this function output 0-->
+    <table>
+            <independentVar lookup="row">/accelerations/pilot-gdamped</independentVar>
+            <tableData>   
+              1     1   
+              9     1   
+              11.5     0 
+            </tableData>
+          </table>
+</product>
+   </function>
 
 
+    <function name="fcs/manual-wing-sweep-main">
+       <description>manual wing sweep 1 Unswept 0 Swept</description>
+          <table>
+            <independentVar lookup="row">/controls/flight/manual-wing-sweep</independentVar>
+            <tableData>
+            0       -1
+            1       0.0
+            2       0.2
+            3       0.4
+            4       0.6
+            5       0.8
+            6       1.0
+            </tableData>
+          </table>
+    </function>
 
-    <function name="/surface-positions/wing-sweep-pos-norm">
+  <channel name="wings">
+   <kinematic name="manual-wing-sweep">
+     <input>fcs/manual-wing-sweep-main</input>
+     <traverse>
+       <setting>
+          <position>  -1 </position>
+          <time>      0 </time>
+       </setting>
+       <setting>
+          <position>  0 </position>
+          <time>      0 </time>
+       </setting>
+       <setting>
+          <position>  1 </position>
+          <time>      8 </time>
+       </setting>
+     </traverse>
+     <output>fcs/manual-wing-sweep</output>
+   </kinematic>
+  </channel>
+
+
+    <function name="fcs/automatic-wing-sweep">
        <description>Automatic wing sweep 1 Unswept 0 Swept</description>
           <table>
             <independentVar lookup="row">velocities/mach</independentVar>
@@ -269,12 +319,37 @@
             </tableData>
           </table>
     </function>
+    <function name="/surface-positions/wing-sweep-pos-norm">
+       <description>wing sweep 1 Unswept 0 Swept</description>
+          <table>
+            <independentVar lookup="row">fcs/automatic-wing-sweep</independentVar>
+            <independentVar lookup="column">fcs/manual-wing-sweep</independentVar>
+            <tableData>
+                    -1      0     1 <!-- -1 is auto-->
+               0     0      0     0
+               1     1      1     0
+            </tableData>
+          </table>
+    </function>
+    <function name="fcs/wing-lift">
+       <description>coeff for extra lift due to wings swept out</description>
+          <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <independentVar lookup="column">/surface-positions/wing-sweep-pos-norm</independentVar>
+            <tableData>
+                     0      1
+               0     0      1
+              0.4    0      1
+              0.5    0      0 <!--cancel extra take off lift-->
+            </tableData>
+          </table>
+    </function>
 
 
   <channel name="Pitch">
 
    <summer name="Pitch Trim Sum">
-      <input>fcs/elevator-cmd-norm</input>
+      <input>fcs/elevator-g-limit</input>
       <input>fcs/pitch-trim-cmd-norm</input>
       <clipto>
         <min> -1 </min>
@@ -527,6 +602,17 @@
            <value> 0.01167 </value>
        </product>
     </function>
+    <function name="aero/force/Lift_takeoffwing">
+       <description>Extra Delta Lift due to large wings</description>
+       <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>fcs/wing-lift</property>
+           <value> 30 </value>
+           <value> 0.01167 </value>
+       </product>
+    </function>
+
 
     <function name="aero/force/Lift_speedbrake">
        <description>Delta Lift due to speedbrake</description>
