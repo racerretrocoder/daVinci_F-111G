@@ -1638,7 +1638,7 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
  <type>rotate</type>
  <object-name>StarTaileron</object-name>
  <property>sim/multiplay/generic/float[4]</property>
- <factor>20</factor>
+ <factor>-20</factor>
 <center>
 		  <x-m>6.117</x-m>
 		  <y-m>0</y-m>

@@ -678,6 +678,9 @@
                 0.81      0.000
                 1.10      0.003
                 2.80      0.001
+                3.40      0.000
+                3.6       0.0001
+                3.80      0.005
             </tableData>
           </table>
         </product>
@@ -709,7 +712,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/speedbrake-pos-norm</property>
-           <value>0.024</value>
+           <value>0.144</value>
          </product>
     </function>
 

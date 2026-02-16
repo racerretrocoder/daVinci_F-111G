@@ -189,7 +189,7 @@
         <float n="2" alias="/velocities/mach"/>
         <float n="3" alias="/gear/gear[2]/wow/"/>
         <float n="4" type="double" alias="/surface-positions/right-aileron-pos-norm"/>
-        <float n="5" type="double" alias="/surface-positions/left-elevator-pos-norm"/>
+        <float n="5" type="double" alias="controls/flight/elevator"/>
         <float n="6" type="double" alias="/surface-positions/right-taileron-pos-norm"/>
         <float n="7" type="double" alias="/gear/gear[0]/steering-norm"/>
         <float n="8" alias="/position/altitude-ft"> 0 </float><!-- altitude for Smoke/Trail -->
@@ -203,9 +203,9 @@
         <float n="20" alias="/gear/gear[2]/rollspeed-ms"/>  
         <float n="21" alias="/surface-positions/wing-sweep-pos-norm"/>
         <float n="22" alias="/sim/model/door-positions/crew/position-norm"/>
-        <float n="23" alias="/surface-positions/right-spoiler-pos-norm"/>
-        <float n="24" alias="/surface-positions/right-elevator-pos-norm"/>
-        <float n="25" alias="/surface-positions/left-elevator-pos-norm"/>
+        <float n="23" alias="/controls/flight/speedbrake"/>
+        <float n="24" alias="/controls/flight/elevator"/>
+        <float n="25" alias="/controls/flight/elevator"/>
         <float n="26" alias="/position/altitude-ft"/>
        </generic>
     </multiplay>
