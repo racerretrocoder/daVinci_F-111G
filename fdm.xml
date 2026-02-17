@@ -255,6 +255,21 @@
 <!--525sqft swept-->
 <!--126lb/sqft  swept: 158lb/sqft-->
 
+
+<property>/controls/baydoors/AIM120</property>
+<function name="fcs/aim120control">  <!-- TODO! Disable Flight control input when this function is zero! -Done! Add EPU support -Done! -->
+ <description>eleca</description>
+        <table>
+            <independentVar lookup="row">/controls/baydoors/AIM120lock</independentVar>
+            <!--<independentVar lookup="column">/controls/baydoors/AIM120</independentVar>-->
+            <tableData>
+              0     0.5
+              1     1
+            </tableData>
+        </table>
+   </function>
+
+
 <function name="fcs/elevator-g-limit">  
     <product>
       <property>fcs/elevator-cmd-norm</property> <!--if its Zero. Itll Cancel out the glimit, Making this function output 0-->
@@ -347,6 +362,20 @@
 
 
   <channel name="Pitch">
+   <kinematic name="Baydoors 2">
+     <input>fcs/aim120control</input>
+     <traverse>
+       <setting>
+          <position>  0.5 </position>
+          <time>      0 </time>
+       </setting>
+       <setting>
+          <position>  1 </position>
+          <time>      0.6 </time>
+       </setting>
+     </traverse>
+     <output>fcs/AIM120</output>
+   </kinematic>
 
    <summer name="Pitch Trim Sum">
       <input>fcs/elevator-g-limit</input>

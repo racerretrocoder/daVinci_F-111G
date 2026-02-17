@@ -11,7 +11,6 @@ var enginecheck = func() {
     if (getprop("controls/engines/engine[0]/starter") == 0) {
         setprop("controls/engines/engine[0]/starter",1);
         setprop("controls/engines/engine[1]/starter",1);
-        screen.log.write("Dont touch the engine starter while autostart is in progress! Or they might not start!",1,0,0);
     }
 }
 

@@ -536,11 +536,16 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
         <object-name>StarAileron</object-name>
         <object-name>StarSlat</object-name>
 	<object-name>StarTank</object-name>
-        <object-name>StarInnerPylon</object-name>
+        <object-name>p1</object-name>
+        <object-name>p2</object-name>
+        <object-name>aim54-2</object-name>
+        <object-name>aim54-1</object-name>
         <object-name>StarGBU10</object-name>
 	<object-name>StarOutsidePylon</object-name>
 	<object-name>StarSpoiler</object-name>
         <name>tiptrail-p</name>
+
+
         <object-name>GreenLight</object-name>
         <object-name>StarUpperFStrip</object-name>
         <object-name>StarLowerFStrip</object-name>
@@ -577,6 +582,8 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
  <animation>
 	 <type>rotate</type>
 	 <object-name>StarTank</object-name>
+   <object-name>p1</object-name>
+   <object-name>aim54-1</object-name>
 	 <property>sim/multiplay/generic/float[21]</property>
 	 
 	 <interpolation>
@@ -608,8 +615,9 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
 
 <animation>
 	 <type>rotate</type>
-	 <object-name>StarInnerPylon</object-name> 
          <object-name>StarGBU10</object-name>
+         <object-name>p2</object-name>
+         <object-name>aim54-2</object-name>
 	 <property>sim/multiplay/generic/float[21]</property>
 	 
 	 <interpolation>
@@ -803,6 +811,129 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
 </animation>
              
     
+  <animation>
+    <type>select</type>
+        <object-name>p4</object-name>
+	      <object-name>p3</object-name>
+	      <object-name>p2</object-name>
+        <object-name>p1</object-name>
+
+    <condition>
+      <greater-than>
+        <property>f111/haspylons</property>
+        <value>0.0</value>
+      </greater-than>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+        <object-name>PortTank</object-name>
+                <object-name>PortGBU10</object-name>
+        <object-name>StarTank</object-name>
+                <object-name>StarGBU10</object-name>
+                <object-name>PortGBU31</object-name>
+                <object-name>StarGBU31</object-name>
+    <condition>
+      <greater-than>
+        <property>f111/haspylonsae</property>
+        <value>0.0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+
+
+  <animation>
+    <type>select</type>
+        <object-name>aim54-1</object-name>
+    <condition>
+      <equals>
+        <property>sim/weight[0]/selected</property>
+        <value>Aim-54</value>
+      </equals>
+      <equals>
+        <property>controls/armament/station[0]/release</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+        <object-name>aim54-2</object-name>
+    <condition>
+      <equals>
+        <property>sim/weight[1]/selected</property>
+        <value>Aim-54</value>
+      </equals>
+      <equals>
+        <property>controls/armament/station[1]/release</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+    <animation>
+    <type>select</type>
+        <object-name>aim54-3</object-name>
+    <condition>
+      <equals>
+        <property>sim/weight[2]/selected</property>
+        <value>Aim-54</value>
+      </equals>
+      <equals>
+        <property>controls/armament/station[2]/release</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+    <animation>
+    <type>select</type>
+        <object-name>aim54-4</object-name>
+    <condition>
+      <equals>
+        <property>sim/weight[3]/selected</property>
+        <value>Aim-54</value>
+      </equals>
+      <equals>
+        <property>controls/armament/station[3]/release</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+        <object-name>aim54-5</object-name>
+    <condition>
+      <equals>
+        <property>sim/weight[4]/selected</property>
+        <value>Aim-54</value>
+      </equals>
+      <equals>
+        <property>controls/armament/station[4]/release</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+        <object-name>aim54-6</object-name>
+    <condition>
+      <equals>
+        <property>sim/weight[5]/selected</property>
+        <value>Aim-54</value>
+      </equals>
+      <equals>
+        <property>controls/armament/station[5]/release</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
   <!-- left wing sweep -->
   
   <animation>
@@ -815,6 +946,10 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
 	 <object-name>PortInnerPylon</object-name>
          <object-name>PortGBU10</object-name>
 	 <object-name>PortTank</object-name>
+	 <object-name>p3</object-name>
+	 <object-name>p4</object-name>
+	 <object-name>aim54-3</object-name>
+   <object-name>aim54-4</object-name>
          <object-name>PortSpoiler</object-name>
          <object-name>RedLight</object-name>
          <object-name>PortUpperFStrip</object-name>
@@ -853,6 +988,8 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
   <animation>
 	 <type>rotate</type>
 	 <object-name>PortTank</object-name>
+   <object-name>p4</object-name>
+   <object-name>aim54-4</object-name>
 	 <property>sim/multiplay/generic/float[21]</property>
 	 
 	 <interpolation>
@@ -884,7 +1021,8 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
  
  <animation>
 	 <type>rotate</type>
-	<object-name>PortInnerPylon</object-name>
+	<object-name>p3</object-name>
+  <object-name>aim54-3</object-name>
         <object-name>PortGBU10</object-name>
 	<property>sim/multiplay/generic/float[21]</property>
 	 
