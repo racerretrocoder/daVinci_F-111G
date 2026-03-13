@@ -53,3 +53,30 @@ var sweepout = func() {
         setprop("controls/flight/manual-wing-sweep",5);
     }
 }
+
+
+
+var engineup = func() {
+    setprop("controls/engines/engine[0]/throttle",getprop("controls/engines/engine[0]/throttle") +10);
+    setprop("controls/engines/engine[1]/throttle",getprop("controls/engines/engine[1]/throttle") +10);
+    if (getprop("controls/engines/engine/throttle") > 1) {
+        setprop("controls/engines/engine[0]/throttle",1);
+        setprop("controls/engines/engine[1]/throttle",1);
+        screen.log.write("Engines at FULL AB");
+    } else {
+        screen.log.write("Engines at "~getprop("controls/engines/engine/throttle")*100~"%");
+    }
+    
+}
+var enginedn = func() {
+    setprop("controls/engines/engine[0]/throttle",getprop("controls/engines/engine[0]/throttle") +10);
+    setprop("controls/engines/engine[1]/throttle",getprop("controls/engines/engine[1]/throttle") +10);
+    if (getprop("controls/engines/engine/throttle") < 0) {
+        setprop("controls/engines/engine[0]/throttle",0);
+        setprop("controls/engines/engine[1]/throttle",0);
+        screen.log.write("Engines at idle");
+    } else {
+        screen.log.write("Engines at "~getprop("controls/engines/engine/throttle")*100~"%");
+    }
+    
+}

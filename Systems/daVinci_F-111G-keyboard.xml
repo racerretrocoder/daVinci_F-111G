@@ -6,7 +6,7 @@
     <desc>Toggle smoke</desc>
 	<binding>
 		<command>nasal</command>
-		<script>f22.decthrot();</script>
+		<script>flight.engineup();</script>
 	</binding>
   </key>
 
@@ -15,7 +15,7 @@
     <desc>Toggle smoke varriant 1</desc>
 	<binding>
 		<command>nasal</command>
-		<script>f22.incthrot();</script>
+		<script>flight.enginedn();</script>
 	</binding>
   </key>
 

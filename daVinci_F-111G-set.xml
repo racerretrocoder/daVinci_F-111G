@@ -655,7 +655,10 @@
     <help>
 
       <title>daVinci_F-111G</title>
-      
+            <key>
+        <name>1/2</name>
+        <desc>decrease/increase engine throttle</desc>
+      </key>
       <key>
         <name>j/k</name>
         <desc>decrease/increase spoilers</desc>
