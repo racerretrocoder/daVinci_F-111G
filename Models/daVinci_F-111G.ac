@@ -2848,7 +2848,7 @@ refs 4
 122 0.396874 0.0946207
 kids 0
 OBJECT poly
-name "aim54-2"
+name "aim54-3"
 loc -0.0397249 -2.45426 -3.2405
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
@@ -3794,7 +3794,7 @@ refs 4
 126 0.992599 0.605463
 kids 0
 OBJECT poly
-name "aim54-4"
+name "aim54-2"
 loc 0.489848 -2.40626 6.2405
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
@@ -4740,7 +4740,7 @@ refs 4
 126 0.992599 0.605463
 kids 0
 OBJECT poly
-name "aim54-3"
+name "aim54-4"
 loc -0.0397249 -2.46667 4.15115
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
