@@ -69,8 +69,8 @@ var engineup = func() {
     
 }
 var enginedn = func() {
-    setprop("controls/engines/engine[0]/throttle",getprop("controls/engines/engine[0]/throttle")+0.1);
-    setprop("controls/engines/engine[1]/throttle",getprop("controls/engines/engine[1]/throttle")+0.1);
+    setprop("controls/engines/engine[0]/throttle",getprop("controls/engines/engine[0]/throttle")-0.1);
+    setprop("controls/engines/engine[1]/throttle",getprop("controls/engines/engine[1]/throttle")-0.1);
     if (getprop("controls/engines/engine/throttle") < 0) {
         setprop("controls/engines/engine[0]/throttle",0);
         setprop("controls/engines/engine[1]/throttle",0);
