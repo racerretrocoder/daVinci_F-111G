@@ -3,6 +3,16 @@
 <PropertyList>
 
   <model>
+    <path>Aircraft/daVinci_F-111G/Models/Instruments/radar/radar-screen.xml</path>
+    <offsets>
+      <x-m>-0.131</x-m>
+      <y-m>0.09</y-m>
+      <z-m>-0.01</z-m>
+    </offsets>
+  </model>
+
+
+  <model>
     <path>Aircraft/daVinci_F-111G/Models/Instruments/asi/A-10-asi.xml</path>
     <offsets>
       <x-m>-0.131</x-m>

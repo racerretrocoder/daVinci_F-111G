@@ -100,10 +100,10 @@ var Loading_missile = func(name)
         detectionfovdeg = 360;                       # TODO implent data link system so we can control these variables while missile is in flight
         trackmaxdeg = 360;                           # 
         maxg = 8;                                   # wikipedia
-        thrustlbs = 4500;                             # 1,500 to 2,500 pounds of thrust maybe
+        thrustlbs = 1415;                             # 1,500 to 2,500 pounds of thrust maybe
         thrustlbsstage2 = 2080;
-        thrustdurationsec = 20;
-        thrustdurationsecstage2 = 120;                      # 
+        thrustdurationsec = 10;
+        thrustdurationsecstage2 = 160;                      # 
         weightlaunchlbs = 1015; # weightlaunch + fuel
         weightwarheadlbs = 133;
         dragcoeff = 0.14;                              # really slow lowerd it a bit
@@ -114,10 +114,11 @@ var Loading_missile = func(name)
         sdspeed = 0.65;                         # Test Self Destruct Speed. in mach
         fox = "Fox 3";
         rail = "false";
-        cruisealt = getprop("position/altitude-ft") + 3000; # Hell yeah
+        cruisealt = 0;
         chute = 0;
         isbomb = 0;
         pbrange = 10000; # added on 
+        ignitedelay = 5;
     }
     elsif(name == "Aim-260")
     {

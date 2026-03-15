@@ -118,3 +118,67 @@ var oppfunc = func(heading) {
   }
 }
 setprop("controls/armament/master-arm",1);
+setprop("f22/fcs/glimit",7.8);
+setprop("f22/fcs/aoalimit",30);
+setprop("autopilot/locks/fcs","");
+
+
+var updateradarcs = func {
+# Add a if lock 
+if (getprop("/instrumentation/radar/lock2") != 0){
+  print("f22.nas: Radar LOCKED!");
+  var callsign = radar.tgts_list[radar.Target_Index].Callsign.getValue();
+  var mpid = misc.smallsearch(callsign);
+  var lockedalt = getprop("/ai/models/multiplayer[" ~ mpid ~ "]/position/altitude-ft");
+  var lockedrng = getprop("/ai/models/multiplayer[" ~ mpid ~ "]/radar/range-nm");
+  setprop("controls/radar/lockedalt",lockedalt);
+  setprop("controls/radar/lockedrange",lockedrng);
+  setprop("controls/radar/lockedcallsign", radar.tgts_list[radar.Target_Index].Callsign.getValue());
+  } else {
+  # Not locked on
+  #print("aw not locked");
+  setprop("controls/radar/lockedcallsign", "None");
+  }
+}
+
+radartimer = maketimer(0.1,updateradarcs);
+radartimer.start();
+
+  setprop("controls/radar/lockedcallsign", "None");
+setprop("autopilot/locks/altitude","");
+
+var fcsloop = func() {
+  var controlThresh = 0.01;
+  var negcontrolThresh = -1 * controlThresh;
+  var glimit = getprop("/f22/fcs/glimit");#g
+  var alimit = getprop("/f22/fcs/aoalimit");#alpha
+  var elevator = getprop("/controls/flight/elevator");
+  var aileron = getprop("/controls/flight/aileron");
+  var rudder = getprop("/controls/flight/rudder");
+  var disable = 0;
+    if (elevator > controlThresh or aileron > controlThresh) {
+      disable = 1;
+    }
+    if (elevator < 0 or aileron < 0) {
+      if (elevator < negcontrolThresh or aileron < negcontrolThresh){
+        disable = 1;
+      }
+    }
+    # final checks
+    if (getprop("autopilot/locks/altitude") != "" or getprop("orientation/pitch-deg") < -70 or getprop("orientation/pitch-deg") > 70 or getprop("controls/gear/gear-down") == 1 or getprop("velocities/airspeed-kt") < 50 or getprop("velocities/airspeed-kt") > 900) {
+      disable = 1;
+    }
+
+    if (disable == 0){
+      # not moving controls, criteria met and fcs enabled
+      setprop("/autopilot/locks/fcs","1g");
+    } else {
+      setprop("f22/fcs/controls/elevator",0);
+      setprop("f22/fcs/controls/aileron",0);
+      setprop("f22/fcs/controls/rudder",0);
+      setprop("/autopilot/locks/fcs","");
+    }
+}
+fcslooptimer = maketimer(0.1,fcsloop);
+fcslooptimer.start();
+setprop("controls/radar/cursormode",1);

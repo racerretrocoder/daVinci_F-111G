@@ -19,7 +19,31 @@
 	</binding>
   </key>
 
-
+<key n="82">
+  <name>R</name>
+  <desc>Toggle Radar On/Off</desc>
+    <binding>
+      <command>nasal</command>
+      <script>	   # the property used for this radar is:
+  # su-27/instrumentation/N010-radar/emitting
+  var cwow = getprop("gear/gear[0]/wow");
+  var lwow = getprop("gear/gear[1]/wow");
+  var rwow = getprop("gear/gear[2]/wow");
+  if (cwow == 0 and lwow == 0 and rwow == 0) {
+    if (getprop("su-27/instrumentation/N010-radar/emitting") == 0) {
+      screen.log.write("Radar ACTIVE",0,1,0);
+      setprop("su-27/instrumentation/N010-radar/emitting",1);
+      setprop("controls/radar/cursormode",1);
+    } else {
+      screen.log.write("Radar STANDBY",0,1,0);
+      setprop("su-27/instrumentation/N010-radar/emitting",0);
+      setprop("controls/radar/cursormode",0);
+    }
+  } else {
+    screen.log.write("Cant enable the radar when on the ground",1,0,0);
+  }  </script>
+    </binding>
+ </key>
 
 <key n="101">
   <name>e</name>

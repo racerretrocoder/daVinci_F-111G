@@ -14,6 +14,7 @@ name "aim54-6"
 loc -2.88734 -2.80385 0.0943096
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
+hidden
 numvert 130
 0.568799 2.73639 -0.128788
 0.568799 2.74532 -0.137714
@@ -960,6 +961,7 @@ name "aim54-5"
 loc -2.89567 -2.80385 0.836126
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
+hidden
 numvert 130
 0.585527 2.41255 -0.461557
 -3.3293 2.41255 -0.461558
@@ -1906,6 +1908,7 @@ name "aim54-1"
 loc 0.504413 -2.41487 -5.30533
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
+hidden
 numvert 130
 0.585527 2.41255 -0.461557
 -3.3293 2.41255 -0.461558
@@ -2852,6 +2855,7 @@ name "aim54-3"
 loc -0.0397249 -2.45426 -3.2405
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
+hidden
 numvert 130
 0.568799 2.73639 -0.128789
 0.568799 2.74532 -0.137714
@@ -3798,6 +3802,7 @@ name "aim54-2"
 loc 0.489848 -2.40626 6.2405
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
+hidden
 numvert 130
 0.568799 2.73639 -0.128788
 0.568799 2.74532 -0.137714
@@ -4744,6 +4749,7 @@ name "aim54-4"
 loc -0.0397249 -2.46667 4.15115
 texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/f-14b/Models/Stores/AIM-54/aim-54.png"
 crease 44.000000
+hidden
 numvert 130
 0.585527 2.41255 -0.461557
 -3.3293 2.41255 -0.461558
@@ -5689,6 +5695,7 @@ OBJECT poly
 name "WindScreenglass"
 loc 0.21707 0.165509 0.000126468
 crease 45.000000
+hidden
 numvert 124
 -2.32616 1.00803 0.172432
 -2.33865 1.03891 0.175123
@@ -8129,6 +8136,7 @@ name "MainGearFrontDoor"
 loc 0.2136 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 79
 -1.99588 -0.957659 0.393313
 -1.91051 -0.953189 0.481109
@@ -9152,6 +9160,7 @@ name "MainGearDoorRear"
 loc 0.2136 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 128
 0.359219 -0.922354 0.153486
 0.359933 -0.928504 0.153486
@@ -10704,6 +10713,7 @@ name "PortGearBrakeStrut"
 loc 0.12657 -0.271431 1.15667
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 71
 0.728089 -1.1211 0.325229
 0.685928 -1.19553 0.325326
@@ -11251,6 +11261,7 @@ name "PortGearFrame"
 loc 0.14089 -1.41267 0.272451
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 65
 0.35655 0.204453 0.847343
 0.355724 0.156885 0.807844
@@ -12044,6 +12055,7 @@ name "PortGearLowerActuator"
 loc 0.24489 -0.485301 -0.0613872
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 20
 0.300295 -0.726678 1.19952
 0.382122 0.0466721 0.545993
@@ -12192,6 +12204,7 @@ name "PortGearUpperActuator"
 loc 0.1779 -1.11981 0.494376
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 86
 0.502221 0.667444 0.0338936
 0.526613 0.650251 0.018958
@@ -13138,6 +13151,7 @@ name "PortGearUpperBrakeStrut"
 loc 0.13389 -1.2083 0.765672
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 42
 0.545611 0.181937 -0.488702
 0.469216 0.28282 0.608711
@@ -13548,6 +13562,7 @@ name "PortWheel"
 loc 0.12715 -0.262831 1.17711
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 540
 0.0653276 -1.1453 0.709394
 0.0945316 -1.23272 0.709657
@@ -21206,6 +21221,7 @@ name "MainGearFrame"
 loc 0.14072 -1.44947 0.000567392
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 212
 0.26196 0.215247 0.0702114
 0.21913 0.186817 0.0702114
@@ -23286,6 +23302,7 @@ name "MainGearBrace2"
 loc 0.13971 0.221929 0.000567392
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 60
 0.0199286 -0.875839 0.107327
 -0.0139359 -0.882366 0.107327
@@ -24050,6 +24067,7 @@ name "MainGearBrace"
 loc 0.26351 -1.34734 0.000567393
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 18
 -0.173063 0.411582 -0.0638657
 -0.274758 0.0864675 -0.0423908
@@ -24268,6 +24286,7 @@ name "StarGearBrakeStrut"
 loc 0.15855 -0.289771 -1.08128
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 71
 0.718696 -1.11326 -0.366578
 0.676184 -1.18747 -0.368891
@@ -24815,6 +24834,7 @@ name "StarGearFrame"
 loc 0.14276 -1.41289 -0.247704
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 65
 0.367802 0.197967 -0.844257
 0.366254 0.150656 -0.804469
@@ -25608,6 +25628,7 @@ name "StarGearLowerActuator"
 loc 0.23562 -0.472961 0.0575359
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 20
 0.333203 -0.756871 -1.17328
 0.39781 0.0326657 -0.536132
@@ -25756,6 +25777,7 @@ name "StarGearUpperActuator"
 loc 0.18389 -1.13921 -0.497496
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 86
 0.48278 0.678546 -0.0370258
 0.506971 0.662514 -0.020558
@@ -26702,6 +26724,7 @@ name "StarGearUpperBrakeStrut"
 loc 0.12087 -1.20516 -0.787058
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 42
 0.52424 0.174105 0.51433
 0.505854 0.266536 -0.586327
@@ -27112,6 +27135,7 @@ name "StarWheel"
 loc 0.13215 -0.259181 -1.14317
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 540
 0.0598111 -1.14675 -0.700813
 0.0885805 -1.23431 -0.701091
@@ -63181,6 +63205,7 @@ name "PortFlap"
 loc 1.19527 0.168509 2.08106
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 74
 0.108452 0.553361 5.84794
 0.070357 0.551901 5.90057
@@ -63761,6 +63786,7 @@ name "StarFlap"
 loc 1.17147 0.172509 -2.08029
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 74
 -0.23883 0.604193 -0.176601
 -0.0299789 0.558267 -0.157898
@@ -64340,6 +64366,7 @@ OBJECT poly
 name "StarFlapRed"
 loc 1.17147 0.172509 -2.08029
 crease 45.000000
+hidden
 numvert 112
 -0.588955 0.496058 -2.32618
 -0.593152 0.472524 -2.32984
@@ -65456,6 +65483,7 @@ name "PortFlapRed"
 loc 1.19527 0.168509 2.08106
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 53
 -0.253971 0.646231 2.28628
 -0.64867 0.685936 2.31909
@@ -66050,6 +66078,7 @@ OBJECT poly
 name "PortFlapRed"
 loc 1.19527 0.168509 2.08106
 crease 45.000000
+hidden
 numvert 112
 -0.792013 0.649328 0.41571
 -1.14388 0.617228 0.445122
@@ -67166,6 +67195,7 @@ name "PortFlapRed"
 loc 1.19527 0.168509 2.08106
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 53
 -0.253971 0.646231 2.28628
 -0.64867 0.685936 2.31909
@@ -67897,6 +67927,7 @@ name "RearFuelPortDoor"
 loc 0.2136 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 10
 -4.71776 0.978633 0.646024
 -4.28892 0.99682 0.59864
@@ -199664,6 +199695,7 @@ name "StarVent"
 loc 0.28818 0.181129 0.0774022
 texture "111sides.png"
 crease 45.000000
+hidden
 numvert 10
 -2.02677 -0.302547 -2.0608
 -2.02485 -0.234467 -2.08162
@@ -199778,6 +199810,7 @@ name "StarVent"
 loc 0.2889 0.192839 0.0634826
 texture "111sides.png"
 crease 45.000000
+hidden
 numvert 10
 -2.05109 -0.747844 -1.53018
 -2.04827 -0.716741 -1.63643
@@ -199980,6 +200013,7 @@ name "PortVent"
 loc 0.28818 0.181129 -0.0771264
 texture "111sides.png"
 crease 45.000000
+hidden
 numvert 10
 -2.02485 -0.234467 2.08103
 -2.02677 -0.302547 2.06023
@@ -200094,6 +200128,7 @@ name "PortVent"
 loc 0.2889 0.192839 -0.0632066
 texture "111sides.png"
 crease 45.000000
+hidden
 numvert 10
 -2.04827 -0.716741 1.63585
 -2.05109 -0.747845 1.52958
@@ -200208,6 +200243,7 @@ name "StarSpoiler"
 loc 1.17147 0.172509 -2.08029
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 53
 -0.626155 0.681712 -2.81679
 -0.551551 0.674754 -2.87555
@@ -200929,6 +200965,7 @@ name "PortSpoiler"
 loc 1.19527 0.168509 2.08106
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 53
 -0.026432 0.67058 5.76025
 -0.102132 0.676081 5.63724
@@ -201667,6 +201704,7 @@ OBJECT poly
 name "StarLowerFStrip"
 loc 0.40737 0.781327 -14.6153
 crease 45.000000
+hidden
 numvert 8
 1.15117 -0.0843052 4.61864
 1.16184 -0.0789564 4.29082
@@ -201706,6 +201744,7 @@ OBJECT poly
 name "StarUpperFStrip"
 loc -0.3747 -2.14133 -13.8723
 crease 45.000000
+hidden
 numvert 8
 1.95068 2.95264 3.86514
 1.92471 2.94746 3.55799
@@ -201745,6 +201784,7 @@ OBJECT poly
 name "PortLowerFStrip"
 loc 0.49813 3.2289 7.04274
 crease 45.000000
+hidden
 numvert 8
 0.52953 -2.52057 3.35009
 0.552934 -2.51936 3.06676
@@ -201784,6 +201824,7 @@ OBJECT poly
 name "PortUpperFStrip"
 loc 1.06486 -1.94858 7.21293
 crease 45.000000
+hidden
 numvert 8
 0.473831 2.77995 3.15573
 0.473217 2.78004 2.86612
@@ -201824,6 +201865,7 @@ name "PortTurbine"
 loc 0.21707 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 121
 1.14058 -0.300037 1.23293
 1.14673 -0.263102 1.22094
@@ -203273,6 +203315,7 @@ name "StarTurbine"
 loc 0.21707 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 121
 1.16458 -0.240276 -1.18982
 1.16458 -0.229791 -1.21042
@@ -204721,6 +204764,7 @@ OBJECT poly
 name "StarboardFormationStrip"
 loc -4.2094 -1.75325 0.642843
 crease 45.000000
+hidden
 numvert 8
 2.84743 2.80757 -1.86418
 2.807 2.81209 -1.88725
@@ -204760,6 +204804,7 @@ OBJECT poly
 name "PortWingStrip"
 loc 0.44526 -2.17727 3.19416
 crease 45.000000
+hidden
 numvert 8
 -2.37118 3.26788 -2.51446
 -2.41655 3.27158 -2.49216
@@ -204877,6 +204922,7 @@ OBJECT poly
 name "StarboardFrontStrip"
 loc 5.87351 -1.48528 2.19102
 crease 45.000000
+hidden
 numvert 8
 -2.86164 1.37074 -3.91916
 -2.85821 1.43777 -3.91644
@@ -259348,6 +259394,7 @@ name "StarWing"
 loc 1.17147 0.172509 -2.08029
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 374
 0.277661 0.588119 -4.1825
 0.693093 0.585811 -9.05817
@@ -263653,6 +263700,7 @@ OBJECT poly
 name "StarWing"
 loc 1.17147 0.172509 -2.08029
 crease 45.000000
+hidden
 numvert 240
 -2.69882 0.575808 -0.660244
 -2.92925 0.47181 -0.751331
@@ -265341,6 +265389,7 @@ name "StarWing"
 loc 1.17147 0.172509 -2.08029
 texture "111ckpit.png"
 crease 45.000000
+hidden
 numvert 6
 0.73876 0.589323 -9.05945
 -0.812564 0.666803 -0.414388
@@ -265403,6 +265452,7 @@ name "p1"
 loc -1.49949 0.202509 -2.73299
 texture "111else.png"
 crease 45.000000
+hidden
 numvert 20
 2.12509 0.45282 -3.07691
 2.12495 0.453067 -2.99232
@@ -265551,6 +265601,7 @@ name "StarSlat"
 loc 1.17147 0.172509 -2.08029
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 113
 -3.03632 0.644643 -0.780619
 -3.09457 0.616654 -0.785774
@@ -266644,6 +266695,7 @@ name "p2"
 loc -0.21949 0.202509 -1.36299
 texture "111else.png"
 crease 45.000000
+hidden
 numvert 21
 0.313765 0.428402 -2.33912
 0.303765 0.428297 -2.38143
@@ -266901,6 +266953,7 @@ name "PortWing"
 loc 1.19527 0.168509 2.08106
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 374
 -0.0111084 0.606049 8.69104
 -0.0382916 0.605209 8.61912
@@ -271206,6 +271259,7 @@ OBJECT poly
 name "PortWing"
 loc 1.19527 0.168509 2.08106
 crease 45.000000
+hidden
 numvert 240
 0.00241423 0.624556 8.61596
 -0.107234 0.5796 8.65164
@@ -272894,6 +272948,7 @@ name "PortWing"
 loc 1.19527 0.168509 2.08106
 texture "111ckpit3_t.png"
 crease 45.000000
+hidden
 numvert 6
 -0.551604 0.633774 0.37685
 0.801751 0.621026 9.05351
@@ -272956,6 +273011,7 @@ name "p3"
 loc -0.1417 0.198509 1.3467
 texture "111else.png"
 crease 45.000000
+hidden
 numvert 21
 -0.552681 -0.104422 2.34007
 -1.44294 -0.119962 2.27246
@@ -273213,6 +273269,7 @@ name "PortSlat"
 loc 1.19527 0.168509 2.08106
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 116
 -3.03628 0.647801 0.780102
 -3.09455 0.619893 0.785345
@@ -274309,6 +274366,7 @@ name "p4"
 loc -1.5087 0.198509 2.7367
 texture "111else.png"
 crease 45.000000
+hidden
 numvert 20
 0.377535 -0.0899079 2.9716
 0.191793 -0.0931501 2.99743
@@ -275073,6 +275131,7 @@ name "PortBayHinges"
 loc 0.2136 0.165509 0.000126468
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 126
 -2.50168 -0.865864 0.777566
 -2.50386 -0.828361 0.792092
@@ -276299,6 +276358,7 @@ name "StarBayHinges"
 loc 0.2136 0.165509 0.000126468
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 126
 -2.50382 -0.828836 -0.792157
 -2.50163 -0.866341 -0.777636
@@ -277524,6 +277584,7 @@ OBJECT poly
 name "StarWingPivot"
 loc 0.2136 0.165509 0.000126468
 crease 45.000000
+hidden
 numvert 38
 -1.57485 0.561754 -1.99016
 -1.66988 0.559929 -2.01299
@@ -278001,6 +278062,7 @@ OBJECT poly
 name "PortWingPivot"
 loc 0.2136 0.165509 0.000126468
 crease 45.000000
+hidden
 numvert 38
 -1.49336 0.563318 2.044
 -1.48308 0.733531 2.01287
@@ -278479,6 +278541,7 @@ name "PortEpaulette"
 loc 0.21707 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 19
 -2.25266 0.502881 2.65671
 -2.1826 0.457467 2.61508
@@ -278710,6 +278773,7 @@ name "PortEpaulette"
 loc 0.21707 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 48
 -3.73411 0.534827 2.04534
 -3.89249 0.577294 2.04534
@@ -279324,6 +279388,7 @@ name "StarEpaulette"
 loc 0.21707 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 48
 -2.29293 0.549084 -2.67439
 -2.25221 0.578695 -2.66681
@@ -279938,6 +280003,7 @@ name "StarEpaulette"
 loc 0.21707 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 19
 -2.16948 0.407188 -2.11397
 -2.938 0.523021 -2.37393
@@ -280169,6 +280235,7 @@ name "StarTaileron"
 loc 3.60274 -4.75912 0.000126362
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 57
 5.2358 5.41634 -3.81494
 5.2357 5.39939 -3.83827
@@ -280822,6 +280889,7 @@ name "PortTaileron"
 loc 3.71011 -4.75111 0.000130653
 texture "111wings.png"
 crease 45.000000
+hidden
 numvert 57
 4.6216 5.41606 3.81894
 4.7423 5.40167 3.81975
@@ -281475,6 +281543,7 @@ name "Rudder"
 loc 0.21707 0.165509 0.000126468
 texture "111sides.png"
 crease 45.000000
+hidden
 numvert 10
 8.11076 3.22973 0.0183395
 6.7153 0.871974 0.0898396
@@ -281589,6 +281658,7 @@ name "BayandGearHousing"
 loc 0.21707 0.165909 0.000126468
 texture "111div.png"
 crease 45.000000
+hidden
 numvert 1644
 -2.41831 -0.608822 -0.0334715
 -2.42154 -0.615158 -0.0312845
@@ -298948,6 +299018,7 @@ name "UpperFuselage"
 loc 0.21707 0.165509 0.000126468
 texture "111bottop.png"
 crease 45.000000
+hidden
 numvert 1758
 -1.27458 0.158912 -1.33146
 -1.30868 -0.398802 -1.16028
@@ -320136,6 +320207,7 @@ name "LowerFuselage"
 loc 0.21757 0.165009 0.000126582
 texture "111sides.png"
 crease 45.000000
+hidden
 numvert 1681
 8.25008 0.667199 -0.162537
 8.25008 0.667199 0.161828
@@ -346966,6 +347038,7 @@ name "NoseandBurners"
 loc 0.21707 0.165509 0.000126468
 texture "111else.png"
 crease 45.000000
+hidden
 numvert 982
 6.37868 -0.00681914 1.4263
 6.37187 0.149198 1.44687

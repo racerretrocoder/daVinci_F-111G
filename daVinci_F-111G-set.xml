@@ -327,6 +327,42 @@
               </script>
             </binding>
           </item>
+           <item n="12">
+            <label>Clean load</label>
+            <binding>
+              <command>nasal</command>
+              <script>
+              setprop("sim/weight[0]/selected","");
+              setprop("sim/weight[1]/selected","");
+              setprop("sim/weight[2]/selected","");
+              setprop("sim/weight[3]/selected","");
+              setprop("sim/weight[4]/selected","");
+              setprop("sim/weight[5]/selected","");
+              setprop("controls/armament/station[0]/release",1);
+              setprop("controls/armament/station[1]/release",1);
+              setprop("controls/armament/station[2]/release",1);
+              setprop("controls/armament/station[3]/release",1);
+              setprop("controls/armament/station[4]/release",1);
+              setprop("controls/armament/station[5]/release",1);
+              setprop("f111/haspylons",0);
+              </script>
+            </binding>
+          </item>
+<item>
+			<label>Toggle Damage</label>
+			<binding>
+				<command>nasal</command>
+				<script>
+					if(getprop("/gear/gear/compression-ft") > 0.01){
+						if(getprop("/payload/armament/msg")){screen.log.write("Damage OFF",1,0,0);setprop("/payload/armament/msg",0);setprop("f22/auxcomm/oldd",0);}else{screen.log.write("Damage ON",1,0,0);setprop("/payload/armament/msg",1);setprop("f22/auxcomm/oldd",1);}
+					}else{
+						screen.log.write("Damage can be toggled only when on the ground! Sorry! Its just the way it is.",1,0,0);
+					}
+				</script>
+			</binding>
+		</item>
+
+
         </menu>
       </default>
     </menubar>

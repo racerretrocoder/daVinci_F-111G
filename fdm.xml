@@ -91,14 +91,14 @@
    <location unit="IN">
      <x> 114.82 </x>
      <y>   0.00 </y>
-     <z> -105.98 </z>
+     <z> -120.98 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">      30000.00 </spring_coeff>
    <damping_coeff unit="LBS/FT/SEC"> 15000.00 </damping_coeff>
-   <max_steer unit="DEG"> 5.00 </max_steer>
+   <max_steer unit="DEG"> 45.00 </max_steer>
    <brake_group>NONE</brake_group>
    <retractable>1</retractable>
   </contact>
@@ -107,7 +107,7 @@
    <location unit="IN">
      <x> 551.12 </x>
      <y> -68.04 </y>
-     <z> -105.98 </z>
+     <z> -120.98 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -123,7 +123,7 @@
    <location unit="IN">
      <x> 551.12 </x>
      <y>  68.04 </y>
-     <z> -105.98 </z>
+     <z> -120.98 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -248,7 +248,14 @@
  </propulsion>
 
  <flight_control name="FCS: F-111">
-
+<property>/autopilot/internal/target-pitch-deg-ae</property>
+<property>/f22/fcs/controls/elevator</property>
+   <function name="fcs/ghold">  
+<sum>
+<property>/orientation/pitch-deg</property>
+<property>/autopilot/internal/target-pitch-deg-ae</property>
+</sum>
+   </function>
 
 <!-- Wingsweep stuff -->
 <!--32ft swept -->
@@ -257,6 +264,72 @@
 
 
 <property>/controls/baydoors/AIM120</property>
+
+<property>/f22/fcs/glimit</property>
+<property>/f22/fcs/aoalimit</property>
+<function name="fcs/elevator-g-limit-pre">  
+    <table>
+            <independentVar lookup="row">/accelerations/pilot-gdamped</independentVar>
+            <independentVar lookup="column">/f22/fcs/glimit</independentVar>
+            <tableData>   
+                    0     1     2     3     4     5     6     7     8     9     10     11     12
+              1     1     0.5   0.7   0.8   0.9   1     1     1     1     1     1      1      1
+              2     1     0.1   0.5   0.7   0.8   0.9   1     1     1     1     1      1      1
+              3     1     0     0.1   0.5   0.7   0.8   0.9   1     1     1     1      1      1
+              4     1     0     0     0.1   0.5   0.7   0.8   0.9   1     1     1      1      1
+              5     1     0     0     0     0.1   0.5   0.7   0.8   0.9   1     1      1      1
+              6     1     0     0     0     0     0.1   0.5   0.7   0.8   0.9   1      1      1
+              7     1     0     0     0     0     0     0.1   0.5   0.7   0.8   0.9    1      1
+              8     1     0     0     0     0     0     0     0.1   0.5   0.7   0.8    0.9    1
+              9     1     0     0     0     0     0     0     0     0.1   0.5   0.7    0.8    0.9
+             10     1     0     0     0     0     0     0     0     0     0.1   0.5    0.7    0.8
+             11     1     0     0     0     0     0     0     0     0     0     0.1    0.5    0.7
+             12     1     0     0     0     0     0     0     0     0     0     0      0.1    0.5
+             13     1     0     0     0     0     0     0     0     0     0     0      0      0.1
+             14     1     0     0     0     0     0     0     0     0     0     0      0      0
+            </tableData>
+          </table>
+   </function>
+
+
+<function name="fcs/aoa-pre">  
+        <table>
+            <independentVar lookup="row">aero/alpha-deg</independentVar>
+            <independentVar lookup="column">/f22/fcs/aoalimit</independentVar>
+            <tableData> 
+                    10    20    30    40    50    60    70    80    90    
+              -20   1     1     1     1     1     1     1     1     1         
+              -10   1     1     1     1     1     1     1     1     1           
+              -1    1     1     1     1     1     1     1     1     1             
+               0    1     1     1     1     1     1     1     1     1              
+              10    0.1   1     1     1     1     1     1     1     1                   
+              20    0     0.1   1     1     1     1     1     1     1                     
+              30    0     0     0.1   1     1     1     1     1     1                     
+              40    0     0     0     0.1   1     1     1     1     1                    
+              50    0     0     0     0     0.1   1     1     1     1                  
+              60    0     0     0     0     0     0.1   1     1     1                
+              70    0     0     0     0     0     0     0.1   1     1              
+              80    0     0     0     0     0     0     0     0.1   1
+              89    0     0     0     0     0     0     0     0     1 
+              90    0     0     0     0     0     0     0     0     1
+            </tableData>
+          </table>
+   </function>
+
+
+
+
+
+   <function name="fcs/elevator-pos-limited">  <!--Main Elevator POS with Limit-->
+<product>
+      <property>fcs/elevator-cmd-norm</property>
+      <property>fcs/aoa-pre</property>
+      <property>fcs/elevator-g-limit-ae</property>
+</product>
+   </function>
+
+
+
 <function name="fcs/aim120control">  <!-- TODO! Disable Flight control input when this function is zero! -Done! Add EPU support -Done! -->
  <description>eleca</description>
         <table>
@@ -362,6 +435,29 @@
 
 
   <channel name="Pitch">
+ <kinematic name="elevator g lim">
+     <input>fcs/elevator-g-limit-pre</input>
+     <traverse>
+       <setting>
+          <position>  -1 </position>
+          <time>      0.7 </time>
+       </setting>
+       <setting>
+          <position>  0 </position>
+          <time>      0.7 </time>
+       </setting>
+       <setting>
+          <position>  1 </position>
+          <time>      0.7 </time>
+       </setting>
+     </traverse>
+     <output>fcs/elevator-g-limit-ae</output>
+   </kinematic>
+
+
+
+
+
    <kinematic name="Baydoors 2">
      <input>fcs/aim120control</input>
      <traverse>
@@ -378,8 +474,9 @@
    </kinematic>
 
    <summer name="Pitch Trim Sum">
-      <input>fcs/elevator-g-limit</input>
+      <input>fcs/elevator-pos-limited</input>
       <input>fcs/pitch-trim-cmd-norm</input>
+      <input>/f22/fcs/controls/elevator</input>
       <clipto>
         <min> -1 </min>
         <max>  1 </max>
